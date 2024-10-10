@@ -8,6 +8,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             const urlParams = new URLSearchParams(window.location.search);
             const redirectTo = urlParams.get('redirect_to');
+            document.getElementById('redirectLink').href = redirectTo;
 
             if (redirectTo) {
                 const redirectUrl = new URL(redirectTo);
