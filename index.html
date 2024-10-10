@@ -6,12 +6,15 @@
     <title>Redirect Page</title>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const urlParams = new URLSearchParams(window.location.search);
-            const redirectTo = urlParams.get('redirect_to');
+            //const urlParams = new URLSearchParams(window.location.search);
+            //const redirectTo = urlParams.get('redirect_to');
+            const currentURL = window.location.href;
+            const redirectTo = currentURL.split('redirect_to=')[1];
             document.getElementById('redirectLink').href = redirectTo;
             document.getElementById('url').innerText = redirectTo;
 
             if (redirectTo) {
+                redirectTo = decodeURIComponent(redirectTo);
                 const redirectUrl = new URL(redirectTo);
                 window.location.href = redirectTo;
             } else {
