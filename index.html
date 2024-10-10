@@ -9,6 +9,7 @@
             const urlParams = new URLSearchParams(window.location.search);
             const redirectTo = urlParams.get('redirect_to');
             document.getElementById('redirectLink').href = redirectTo;
+            document.getElementById('url').innerText = redirectTo;
 
             if (redirectTo) {
                 const redirectUrl = new URL(redirectTo);
@@ -22,5 +23,7 @@
 <body>
     <h1>Redirecting...</h1>
     <p>If you are not redirected automatically, <a id="redirectLink" href="#">click here</a>.</p>
+
+    <p id="url">Link to redirect</p>
 </body>
 </html>
