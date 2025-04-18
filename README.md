@@ -45,3 +45,5 @@ You can adapt this page for your own project:
 
 1. Modify the HTML/CSS as you like.
 2. Host it anywhere — GitHub Pages, Vercel, your server, etc.
+
+p.s. Special thanks to https://github.com/sm1ky for providing the hack
