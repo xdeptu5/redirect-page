@@ -1,4 +1,4 @@
-# Telegram Deep Link Redirect Hack (for Remnawave Subscriptions)
+# Telegram Deep Link Redirect Hack (for Remnawave Telegram Subscriptions Mini App https://github.com/maposia/remnawave-telegram-sub-mini-app)
 
 This project is a minimal HTML + JS redirector page that implements a **hack to work around Telegram Desktop on Windows not supporting certain external deep links** — such as `v2box://` or other custom protocols.
 
