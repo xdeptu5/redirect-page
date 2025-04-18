@@ -21,3 +21,27 @@ This trick forces Windows to hand off the deep link to the appropriate app — b
 4. If auto-redirect fails, the user can click the button manually.
 
 ---
+
+## 🧾 Example
+
+Since Telegram Desktop on Windows doesn’t support opening `v2box://` directly from mini app, instead you link the user to this page like so:
+https://maposia.github.io/redirect-page/?redirect_to=v2box://install-sub?url=URL&name=Sub
+The redirect page will handle it from there.
+
+---
+
+## 🌍 Features
+
+- ✅ Language support (English & Russian)
+- 🌓 Auto light/dark mode (based on system settings)
+- ⏱ Optional 5-second delay before redirect
+- 📦 Clean and customizable code
+
+---
+
+## 🔧 How to customize
+
+You can adapt this page for your own project:
+
+1. Modify the HTML/CSS as you like.
+2. Host it anywhere — GitHub Pages, Vercel, your server, etc.
